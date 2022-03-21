@@ -9,6 +9,7 @@ import {offerRouter} from "./routes/offerRouter";
 import {galleryRouter} from "./routes/galleryRouter";
 import {contactRouter} from "./routes/contactRouter";
 import {errorHandle} from "./utils/error";
+import {ClientRecord} from "./records/client.record";
 
 const app=express();
 app.use(express.json());
@@ -29,6 +30,16 @@ app.use('/aboutus',aboutUsRouter);
 app.use('/offer',offerRouter);
 app.use('/gallery',galleryRouter);
 app.use('/contact',contactRouter);
+
+
+(async ()=>{
+    const client=new ClientRecord({
+        name_surname:"łukasz kleba",
+        phone:666666666,
+        description:"Wymienic kibel"
+    });
+    await client.insert();
+})();
 
 
 app.use(errorHandle);
