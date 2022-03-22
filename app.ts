@@ -32,15 +32,6 @@ app.use('/gallery',galleryRouter);
 app.use('/contact',contactRouter);
 
 
-(async ()=>{
-    const client=new ClientRecord({
-        name_surname:"łukasz kleba",
-        phone:666666666,
-        description:"Wymienic kibel"
-    });
-    await client.insert();
-})();
-
 
 app.use(errorHandle);
 
