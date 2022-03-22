@@ -1,6 +1,7 @@
 import {Request, Response, Router} from 'express';
 import {ClientRecord} from "../records/client.record";
 import {ValidationError} from "../utils/error";
+import {sendMail} from "../utils/mail";
 
 export const contactRouter=Router();
 
@@ -25,6 +26,9 @@ contactRouter
         }
         const client=new ClientRecord(obj);
         await client.insert();
+
+        await sendMail(person,phone,problem);
+
         res.send("OK MORDO");
     })
 
