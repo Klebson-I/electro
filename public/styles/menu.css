@@ -3,14 +3,15 @@
     width: 100%;
     align-items: center;
     justify-content: center;
-    background-color: #323231;
+    background-color: #dcdcdc;
     color: white;
     opacity: 1;
     height: 72px;
     transition: 0.2s ease-in;
     position: relative;
+
 }
-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
+
 
 .mainNavigation__ul{
     list-style: none;
@@ -33,7 +34,7 @@ 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
 }
 .mainNavigation__ul--li--a{
     text-decoration: none;
-    color: white;
+    color: black;
     font-family: 'Cairo', sans-serif;
 }
 
