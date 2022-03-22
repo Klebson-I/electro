@@ -1,0 +1,77 @@
+
+.gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    margin:0 auto;
+    padding: 0;
+    width: 100%;
+}
+.gallery--container{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 90%;
+}
+.gallery--container--img{
+    display: block;
+    padding: 20px;
+    background: #dcdcdc;
+    box-shadow: 0px 0px 5px #aaaaaa;
+}
+.gallery--container--img img{
+    width:300px;
+    height: 300px;
+}
+.gallery--container--text{
+    margin:0 auto;
+    width:100%;
+    padding: 20px;
+    font-family: Century Gothic;
+    color:#323232;
+}
+.gallery--container--text h4{
+    color:#ffbb28;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+.gallery--container--text h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.gallery--container--text p{
+    width: 60%;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.button--gallery{
+    display: block;
+    padding: 8px;
+    width: 120px;
+   background: #ffbb28;
+    //background: #823303;
+    border-radius: 30px;
+    border: 0.4px;
+}
+.button--gallery a{
+    text-decoration: none;
+    color:#323232;
+    font-family: Century Gothic;
+    font-size:15px;
+    font-weight: 700;
+    line-height: 0.2;
+}
+.button--gallery:hover{
+    background: #323232;
+    transition: 0.8s;
+}
+.button--gallery a:hover{
+    color:#ffbb28;
+    transition: 0.8s;
+}
+
+

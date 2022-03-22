@@ -9,7 +9,6 @@ import {offerRouter} from "./routes/offerRouter";
 import {galleryRouter} from "./routes/galleryRouter";
 import {contactRouter} from "./routes/contactRouter";
 import {errorHandle} from "./utils/error";
-import {ClientRecord} from "./records/client.record";
 
 const app=express();
 app.use(express.json());

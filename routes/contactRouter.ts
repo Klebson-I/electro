@@ -18,16 +18,21 @@ contactRouter
         if(phone.toString()[0]==="0"||
         phone.length!==9)throw new ValidationError("Zły numer telefonu !");
 
-
         const obj={
             name_surname:person,
             description:problem,
             phone:req.body.phone
         }
-        const client=new ClientRecord(obj);
-        await client.insert();
 
-        await sendMail(person,phone,problem);
+        const client=new ClientRecord(obj);
+
+        try{
+            await client.insert();
+            await sendMail(person,phone,problem);
+        }
+        catch (e) {
+            throw new Error(e);
+        }
 
         res.send("OK MORDO");
     })
