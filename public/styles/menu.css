@@ -40,7 +40,7 @@
 .mainNavigation__ul--li--a:hover{
     color: #ffbb28;
 // text-decoration: line-through;
-    transition: 0.5s;
+    transition: 0.1s;
 }
 
 .mainNavigation--img{
@@ -163,10 +163,10 @@
     color: #323232;
     padding: 10px 0;
     font-weight: bolder;
+    transition: 0.1s ease-in;
 }
 .mainNavigation__burgerMenu--ul--li:hover{
     color: #323232;
-    transition: 0.5s;
 }
 @media (max-width: 500px) {
     .mainNavigation__ul{
