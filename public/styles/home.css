@@ -14,3 +14,40 @@
 
     }
 }
+
+.animateTextDiv{
+    width: 35%;
+    height: 200px;
+    margin-top: 100px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+
+}
+.animateTextDiv__text{
+    width: 100%;
+    font-size: 24px;
+    font-family: Century Gothic;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.animateTextDiv__a{
+    background-color: #ffbb28;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    font-family: Century Gothic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    border-radius: 20px;
+}

@@ -61,7 +61,7 @@ class AnimateText{
                 this.stringsArrActualIndex++;
                 this.startAnimation();
             }
-        },200)
+        },300)
     }
 }
 const animation=new AnimateText();
