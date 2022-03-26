@@ -1,53 +1,342 @@
-.baner--container{
-    margin:0 auto;
-    position: absolute;
+.bannerContainer{
+
     width:100%;
-    height:100%;
+    min-height:100%;
     background-image: url("../images/baner-background.png");
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
     z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
-@media (max-width: 1024px) {
-    .baner--container {
 
-    }
+
+.home__heading{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.home__heading--header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: Century Gothic;
+    font-size: 80px;
+    width: 70%;
+    margin-bottom: 20px;
 }
 
 .animateTextDiv{
-    width: 35%;
-    height: 200px;
-    margin-top: 100px;
-    margin-left: 100px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: transparent;
-    backdrop-filter: blur(5px);
 
 }
 .animateTextDiv__text{
     width: 100%;
-    font-size: 24px;
+    font-size: 26px;
     font-family: Century Gothic;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 20px;
     margin-left: 10px;
+    color: rgb(126,43,0);
+    font-weight: 700;
 }
 
-.animateTextDiv__a{
-    background-color: #ffbb28;
-    color: black;
-    padding: 10px;
-    text-decoration: none;
-    font-family: Century Gothic;
+@media (max-height: 350px) {
+    .home__heading{
+        transform: translateY(-60px);
+    }
+}
+
+@media (max-width: 865px) {
+    .home__heading{
+        width: 90%;
+    }
+}
+
+@media (max-width: 540px) {
+    .animateTextDiv__text{
+        font-size: 23px;
+    }
+    .home__heading--header{
+        font-size: 60px;
+    }
+    .home__heading{
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 463px) {
+    .animateTextDiv__text{
+        font-size: 20px;
+    }
+    .home__heading--header{
+        font-size: 50px;
+    }
+    .home__heading{
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 375px) {
+    .animateTextDiv__text{
+        font-size: 18px;
+    }
+    .home__heading--header{
+        font-size: 40px;
+    }
+    .home__heading{
+        margin-left: 10px;
+        width: 95%;
+    }
+}
+
+.aboutUsContainer{
+    margin: 30px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.aboutUsContainer--img{
+    width: 45%;
+    height: auto;
+}
+
+.aboutUsContainer__desc{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutUsContainer__desc--header{
+    font-family: 'Cairo', sans-serif;
+}
+.aboutUsContainer__desc--text{
+    font-family: 'Cairo', sans-serif;
+    font-size: 23px;
+}
+
+@media (max-width: 990px) {
+    .aboutUsContainer__desc--text{
+        font-size: 20px;
+    }
+    .aboutUsContainer__desc--header{
+        font-size: 26px;
+    }
+    .aboutUsContainer--img{
+        width: 48%;
+    }
+}
+
+@media (max-width: 840px) {
+    .aboutUsContainer__desc--text{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 800px) {
+    .aboutUsContainer{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .aboutUsContainer--img{
+        width: 90%;
+    }
+    .aboutUsContainer__desc{
+        width: 90%;
+    }
+    .aboutUsContainer__desc--text{
+        font-size: 20px;
+    }
+}
+@media (max-width: 500px) {
+    .aboutUsContainer__desc--text{
+        font-size: 17px;
+    }
+}
+
+.offerContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.offerContainer--header{
+    font-family: 'Cairo', sans-serif;
+}
+
+.offerContainer__offers{
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+}
+.offerContainer__offers__offer{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.offerContainer__offers__offer:nth-child(3){
+    flex-direction: row-reverse;
+}
+.offerContainer__offers__offer:nth-child(4){
+    flex-direction: row-reverse;
+}
+.offerContainer__offers__offer--line{
+    height: 1px;
+    background-color: #ffbb28;
+    width: 40%;
+}
+.offerContainer__offers__offer--name{
+    font-family: 'Cairo', sans-serif;
+}
+
+@media (max-width: 770px) {
+    .offerContainer--header{
+        font-size: 26px;
+    }
+    .offerContainer__offers{
+        flex-direction: column;
+    }
+    .offerContainer__offers__offer{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 500px) {
+    .offerContainer__offers__offer--name{
+        font-size: 15px;
+    }
+    .offerContainer__offers__offer--line{
+        width: 20%;
+    }
+}
+
+@media (max-width: 350px) {
+    .offerContainer__offers__offer--line{
+        width: 20%;
+    }
+}
+
+.pageFooter{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background:linear-gradient(white, #e8e7e7);
+    width: 100%;
+}
+
+.pageFooter--img{
+    width: 150px;
+    height: auto;
+}
+
+.pageFooterHelpDiv{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.pageFooter__contact{
+    display: flex;
+    flex-direction: column;
     width: 50%;
-    border-radius: 20px;
+    align-items: flex-start;
+    justify-content: center;
+}
+.pageFooter__contact h4{
+    font-family: Century Gothic;
+    margin-bottom: 5px;
+}
+.pageFooter__contact p{
+    font-family: Century Gothic;
+}
+
+.pageFooter__rights{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 45%;
+}
+.pageFooter__rights__logo{
+    font-family: Century Gothic;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+.pageFooter__rights p{
+    font-family: "Century Gothic";
+    font-size: 14px;
+}
+.pageFooter__rights__logo--highlight{
+    color: #ffbb28;
+}
+.pageFooter__rights__logo--big{
+    color: #ffbb28;
+    font-size: 25px;
+    margin-left: 3px;
+}
+
+@media (max-width: 750px) {
+    .pageFooter__contact p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .pageFooterHelpDiv{
+        flex-direction: column;
+    }
+    .pageFooter__contact{
+        width: 80%;
+        margin-bottom: 5px;
+    }
+    .pageFooter__rights{
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+    .pageFooter__contact h4{
+        font-size: 15px;
+    }
+    .pageFooter__contact p{
+        font-size: 14px;
+    }
+    .pageFooter__contact{
+        width: 100%;
+    }
+    .pageFooter__rights{
+        width: 100%;
+    }
 }
