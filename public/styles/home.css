@@ -1,5 +1,4 @@
 .bannerContainer{
-
     width:100%;
     min-height:100%;
     background-image: url("../images/baner-background.png");
@@ -177,10 +176,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 30px 0;
 }
 
 .offerContainer--header{
     font-family: 'Cairo', sans-serif;
+    margin-bottom: 10px;
 }
 
 .offerContainer__offers{
@@ -248,7 +249,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background:linear-gradient(white, #e8e7e7);
+    background:linear-gradient(white, #d7d6d6);
     width: 100%;
 }
 
@@ -339,4 +340,99 @@
     .pageFooter__rights{
         width: 100%;
     }
+}
+
+@media (max-width: 400px) {
+    .pageFooter--img{
+        width: 100px;
+    }
+    .pageFooter{
+        flex-direction: column;
+    }
+}
+
+.galleryContainer{
+    width: 100%;
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.cafel{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20%;
+    aspect-ratio: 1/1;
+    margin: 1.25%;
+}
+.galleryContainer__cafel1{
+    background-image: url("../images/photo1.jpg");
+}
+.galleryContainer__cafel2{
+    background-image: url("../images/photo2.jpg");
+}
+.galleryContainer__cafel3{
+    background-image: url("../images/photo3.png");
+}
+.galleryContainer__cafel4{
+    background-image: url("../images/photo4.jpg");
+}
+.galleryContainer__cafel5{
+    background-image: url("../images/photo5.jpg");
+}
+.galleryContainer__cafel6{
+    background-image: url("../images/photo6.jpg");
+}
+
+.galleryContainer__cafel7{
+    background-image: url("../images/photo7.jpg");
+}
+
+.galleryContainer__cafel8{
+    background-image: url("../images/photo8.jpg");
+}
+
+.galleryContainer__emptyCafel{
+    width: 20%;
+    aspect-ratio: 1/1;
+    margin: 1.25%;
+}
+
+.galleryContainer__seeMore{
+    background-color: #ffbb28;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 20%;
+    aspect-ratio: 1/1;
+    margin: 1.25%;
+}
+
+.galleryContainer__seeMore a{
+    text-decoration: none;
+    color: black;
+}
+
+.galleryContainer__seeMore a p{
+    font-family: "Century Gothic";
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0px 0px 9px #CECECE;
+}
+
+
+
+.galleryContainer__doubleCafel{
+    width: 40%;
+    aspect-ratio: 2/1;
+    margin: 1.25% 2.5%;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
