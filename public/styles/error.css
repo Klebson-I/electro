@@ -1,0 +1,29 @@
+.error{
+    background-color: #fd9f9f;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.error--header{
+    font-family:'Cairo', sans-serif;
+    font-size: 40px;
+}
+
+.error--message{
+    font-family:'Cairo', sans-serif;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.error--link{
+    text-decoration: none;
+    color: black;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #dcdcdc;
+    border-radius: 20px;
+}

@@ -436,3 +436,34 @@
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width: 840px) {
+    .galleryContainer__doubleCafel{
+        font-size: 35px;
+    }
+}
+@media (max-width: 700px) {
+    .galleryContainer__seeMore a p{
+        font-size: 25px;
+    }
+}
+@media (max-width: 600px) {
+    .galleryContainer__doubleCafel{
+        font-size: 30px;
+    }
+}
+@media (max-width: 500px) {
+    .cafel{
+        width: 40%;
+    }
+    .galleryContainer__doubleCafel{
+        width: 80%;
+    }
+    .galleryContainer__emptyCafel{
+        display: none;
+    }
+    .galleryContainer__seeMore{
+        width: 82.5%;
+        aspect-ratio: 2/1;
+    }
+}

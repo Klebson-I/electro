@@ -3,6 +3,7 @@ import {ClientRecord} from "../records/client.record";
 import {ValidationError} from "../utils/error";
 import {sendMail} from "../utils/mail";
 
+
 export const contactRouter=Router();
 
 
@@ -28,12 +29,12 @@ contactRouter
 
         try{
             await client.insert();
-            await sendMail(person,phone,problem);
+            //await sendMail(person,phone,problem);
         }
         catch (e) {
             throw new Error(e);
         }
 
-        res.send("OK MORDO");
+        res.render('send');
     })
 
