@@ -1,9 +1,10 @@
 
 .offer{
+
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 .offer__offerHeader{
@@ -16,9 +17,9 @@
 }
 
 .offer__offerHeader--heading{
-    color: red;
-    font-family: 'Cairo', sans-serif;
-    font-size: 40px;
+    color: #323232;
+    font-family: Century Gothic;
+    font-size: 35px;
     position: absolute;
     top: 0;
     left: 50%;
@@ -28,15 +29,18 @@
 
 .offer__offerHeader--img{
     position: absolute;
-    top: 52%;
-    left: 56%;
+    top: 30%;
+    left: 57%;
     transform: translateX(-50%);
     z-index: 1;
+    opacity: 0.8;
+    width:60px;
+    height: 30px;
 }
 
 .offer__offers{
-    width: 100%;
-
+    width: 90%;
+    margin:0 auto;
     margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
@@ -46,12 +50,12 @@
 
 .offer__offers--singleOffer{
     width: 30%;
-    margin-bottom: 25px;
+    margin-bottom: 55px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding-bottom: 20px;
-    border-bottom: 1px solid black;
+    padding: 30px;
+    //border-bottom: 0px solid black;
 }
 
 .offer__offers--singleOffer--header{
@@ -62,29 +66,35 @@
 .offer__offers--singleOffer--header--img{
     width: 47px;
     height: 20px;
-    transform: rotateZ(60deg);
+    transform: rotateZ(50deg);
     position: absolute;
     top: 30%;
-    left: -2%;
+    left: -5%;
     z-index: 1;
+
 }
 
 .offer__offers--singleOffer--header--heading{
     width: 100%;
-    font-family: 'Cairo', sans-serif;
-    font-size: 30px;
+    font-family: Century Gothic;
+    color:#323232;
+    font-size: 25px;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 2;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 2px darkgrey;
 }
 
 .offer__offers--singleOffer--text{
     padding: 0;
     margin: 0;
-    font-family: 'Cairo', sans-serif;
-    font-weight: 700;
+    font-family: Century Gothic;
+    color:grey;
+    font-weight: bolder;
     font-size: 17px;
+    line-height: 1.5;
 }
 
 .blankFooter{

@@ -1,6 +1,7 @@
 .contact{
     width: 100%;
-    margin-top:20px;
+    margin: 0 auto;
+    margin-top:50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,15 +19,18 @@
 
 .contactHeader--img{
     position: absolute;
-    left: 50%;
-    top: 30px;
+    left: 52%;
+    top: 20px;
     z-index: 1;
+    width:60px;
+    height: 30px;
 }
 
 .contactHeader--heading{
     position: absolute;
-    font-family: 'Cairo', sans-serif;
-    font-size: 40px;
+    font-family: Century Gothic;
+    color:#323232;
+    font-size: 35px;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -46,11 +50,12 @@
 }
 
 .contact__contact--header{
-    font-family: 'Cairo', sans-serif;
+    font-family: Century Gothic;
     border-bottom: solid 1px black;
     margin-bottom: 20px;
     width: 60%;
     white-space: nowrap;
+    font-weight: 700;
 }
 
 .contact__contactForm--form{
@@ -62,11 +67,11 @@
 .bigInput{
     font-family: 'Cairo', sans-serif;
     font-size: 20px;
-    background-color: #dcdcdc;
+    background-color: #f0eeee;
     width: 60%;
     min-height: 200px;
     resize: vertical;
-    border-radius: 3px;
+    border-radius: 5px;
 
     -webkit-box-shadow: 0px 0px 9px -2px rgba(66, 68, 90, 1);
     -moz-box-shadow: 0px 0px 9px -2px rgba(66, 68, 90, 1);
@@ -78,7 +83,7 @@
 .smallInput{
     font-family: 'Cairo', sans-serif;
     font-size: 20px;
-    background-color: #dcdcdc;
+    background-color: #f0eeee;
     width: 60%;
     border-radius: 3px;
 
@@ -89,20 +94,23 @@
 }
 
 .inputLabel{
-    font-family: 'Cairo', sans-serif;
+    font-family: Century Gothic;
     font-weight: 1000;
-    color: #823303;
-    margin-top: 10px;
+    color: #ffbb28;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
 }
 
 .submitButton {
     margin:20px 0;
     width: 150px;
-    height: 30px;
-    font-family: 'Cairo', sans-serif;
+    height: 45px;
+    font-family: Century Gothic;
+    color:#323232;
     font-size: 20px;
-    background-color: #dcdcdc;
-    border-radius: 10px;
+    background-color: #ffbb28;
+    border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,8 +121,13 @@
     -moz-box-shadow: 0px 0px 9px -2px rgba(66, 68, 90, 1);
     box-shadow: 0px 0px 9px -2px rgba(66, 68, 90, 1);
 
-    border: 1px black solid;
+    border: 0.4px black solid;
     cursor: pointer;
+}
+.submitButton:hover {
+    color: #ffbb28;
+    background-color: #323232;
+    transition: 0.2s;
 }
 
 .contact__data{

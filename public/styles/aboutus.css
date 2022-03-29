@@ -4,14 +4,15 @@
     align-items: center;
     justify-content: center;
     width: 90%;
+    height: 766px;
 }
 
 .aboutUs__mainImg{
-    width: 40%;
+    width: 35%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-right: 15px;
+    margin-right: 35px;
 }
 
 .aboutUs__mainImg--img{
@@ -19,14 +20,14 @@
 }
 
 .aboutUs__info{
-    width: 60%;
+    width: 65%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
 .aboutUs__info--header{
-    margin-bottom:90px;
+    margin-bottom:120px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -40,12 +41,17 @@
     font-size: 50px;
     font-family: 'Cairo', sans-serif;
     z-index: 2;
+    font-weight: bolder;
 }
-
+.aboutUs__info--header--heading span{
+    font-size: 72px;
+    color:#ffbb28;
+    font-family: A bite;
+}
 .aboutUs__info--header--img{
     position: absolute;
-    top:50px;
-    left:100px;
+    top:70px;
+    left:140px;
     z-index: 1;
 }
 
@@ -54,10 +60,10 @@
 }
 
 .aboutUs__info--text--p{
-    font-family: 'Cairo', sans-serif;
+    font-family: Century Gothic;
     width: 70%;
     font-size: 22px;
-    line-height: 1.7;
+    line-height: 1.4;
     margin-bottom: 30px;
     font-weight: 700;
     text-align: justify;
@@ -80,6 +86,7 @@
     .aboutUs__mainImg{
         margin-top: 60px;
         justify-content: center;
+        margin-right: 25px;
     }
     .aboutUs__info--header{
         transform: translateX(50px);
