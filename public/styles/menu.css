@@ -1,3 +1,9 @@
+
+@font-face {
+    font-family: Century Gothic;
+    src:url(../fonts/GOTHIC.ttf);
+}
+
 .mainNavigation{
     display: flex;
     width: 100%;

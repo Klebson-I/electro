@@ -1,26 +1,31 @@
 <div class="bannerContainer">
     <div class="home__heading">
-        <h1 class="home__heading--header">ELEKTRYKA SKEL</h1>
+        <h1 class="home__heading--header"><span>E</span>LEKTRYKA <span>S</span>KEL</h1>
         {{>animatedText}}
+    </div>
+    <div class="img-baner">
+        <img src="/images/imgbaner.png" alt="">
     </div>
 </div>
 
 <div class="aboutUsContainer">
-    <img class="aboutUsContainer--img" src="/images/au_home.png" alt="">
+
+        <img id="aboutUsContainer--img" class="aboutUsContainer--img" src="/images/au_home.png" alt="">
 
     <div class="aboutUsContainer__desc">
         <h1 class="aboutUsContainer__desc--header">KIM JESTEŚMY</h1>
         <p class="aboutUsContainer__desc--text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Accusamus accusantium animi autem consequuntur culpa dolorem error facilis fuga labore,
-            laborum maxime obcaecati omnis optio porro, quo quod, tempora tempore ullam!
+            laborum maxime obcaecati omnis optio porro, quo quod, tempora tempore ullam! <br><span class="abutUsContainer--read--more"><a
+                href="/aboutUs">czytaj wiecej...</a></span>
         </p>
     </div>
 </div>
 
 <div class="offerContainer">
     <h1 class="offerContainer--header">
-        Oferta w skrócie
+        OFERTA W SKRÓCIE
     </h1>
     <div class="offerContainer__offers">
 
@@ -66,7 +71,11 @@
             </p>
         </div>
     </div>
+    <div class="offerContainer--button">
+        <button><a href="">ZOBACZ WIĘCEJ W PEŁNEJ OFERCIE</a></button>
+    </div>
 </div>
+
 
 <div class="galleryContainer">
     <div class="galleryContainer__cafel1 cafel">
@@ -111,7 +120,7 @@
 
     <div class="galleryContainer__seeMore">
         <a href="/gallery">
-            <p>Zobacz</p>
+            <p>zobacz</p>
             <p>pełną</p>
             <p>galerię</p>
         </a>
@@ -121,6 +130,7 @@
 
 
 <script src="/scripts/home.js"></script>
+<script src="/scripts/animations.js"></script>
 
 
 

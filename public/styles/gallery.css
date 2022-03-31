@@ -1,4 +1,9 @@
 
+@font-face {
+    font-family: Century Gothic;
+    src:url(../fonts/GOTHIC.ttf);
+}
+
 .gallery{
     display: flex;
     align-items: center;

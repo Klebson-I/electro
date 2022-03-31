@@ -1,3 +1,12 @@
+@font-face {
+    font-family: A bite;
+    src:url(../fonts/ABITE.ttf);
+}
+@font-face {
+    font-family: Century Gothic;
+    src:url(../fonts/GOTHIC.ttf);
+}
+
 .aboutUs{
     padding: 0;
     display: flex;
@@ -84,7 +93,7 @@
         flex-direction: column;
     }
     .aboutUs__mainImg{
-        margin-top: 60px;
+        margin-top: 100px;
         justify-content: center;
         margin-right: 25px;
     }
@@ -97,14 +106,14 @@
 
 }
 
-@media (max-width: 680px) {
+@media (max-width: 750px) {
     .aboutUs__mainImg--img{
         width: 288px;
         height: 310px;
     }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 590px) {
     .aboutUs__info--text--p{
         font-size: 17px;
         width: 95%;
@@ -112,18 +121,24 @@
     .aboutUs__info--header{
         transform: translateX(15px);
     }
+    .aboutUs__mainImg--img{
+        margin-top: 20px;
+    }
 }
 @media (max-width: 420px) {
+    .aboutUs {
+        height: 866px;
+    }
     .aboutUs__mainImg--img{
         width: 230px;
         height: 248px;
+        margin-top:-20px;
     }
     .aboutUs__info--text--p{
         width: 98%;
     }
     .aboutUs__info--header{
         transform: translateX(0px);
-        margin-bottom: 65px;
     }
     .aboutUs__info--header--heading{
         font-size: 35px;

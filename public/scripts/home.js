@@ -3,12 +3,13 @@
 class AnimateText{
 
     arrayOfStrings=[
-        "INSTALACJE ELEKTRYCZNE",
-        "INSTALACJE ODGROMOWE",
-        "INSTALACJE ALARMOWE",
-        "INSTALACJE KAMER",
-        "SYSTEMY INTELIGENTNEGO DOMU",
-        "PRZYŁĄCZA WLZ"
+        "instalacje elektryczne",
+        "instalacje odgromowe",
+        "instalacje alarmowe",
+        "instalacje kamer",
+        "systemy inteligentnego domu",
+        "przyłącza",
+        "pomiary"
     ];
 
     stringsArrActualIndex=0;
@@ -66,3 +67,18 @@ class AnimateText{
 }
 const animation=new AnimateText();
 animation.startAnimation();
+
+//block animation
+
+window.onscroll = function(){animationBlock()}
+
+function animationBlock(){
+
+    if(document.body.scrollTop > 250 || document.documentElement.scrollTop > 250){
+
+        document.getElementById("aboutUsContainer--img").className = "aboutUsContainer--img--animation";
+
+    }
+
+
+}
