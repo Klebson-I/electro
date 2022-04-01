@@ -64,9 +64,6 @@
     z-index: 1;
 }
 
-.aboutUs__info--text{
-
-}
 
 .aboutUs__info--text--p{
     font-family: Century Gothic;
@@ -121,8 +118,8 @@
     .aboutUs__info--header{
         transform: translateX(15px);
     }
-    .aboutUs__mainImg--img{
-        margin-top: 20px;
+    .aboutUs__mainImg{
+        margin-top: 40px;
     }
 }
 @media (max-width: 420px) {
@@ -143,16 +140,12 @@
     .aboutUs__info--header--heading{
         font-size: 35px;
     }
-    .aboutUs__info--header--img{
+    .aboutUs__info--header--img{//
         width: 66px;
         height: 27px;
-        top: 35px;
-        left: 80px;
+        top: 70px;
+        left: 140px;
     }
-
-}
-
-@media (max-width: 420px) {
     .aboutUs__mainImg--img{
         width: 230px;
         height: 248px;
@@ -161,3 +154,4 @@
         width: 90%;
     }
 }
+
