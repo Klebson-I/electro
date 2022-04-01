@@ -2,30 +2,12 @@
     font-family: Century Gothic;
     src:url(../fonts/GOTHIC.ttf);
 }
-.bannerContainer{
-    margin:0 auto;
-    position: relative;
-    width:100%;
-   height:100%;
-    /background-image: url("../images/baner-background.png");
-    /background-repeat:no-repeat;
-    /background-size:cover;
-    /background-position: center;
-    /z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-
-
-img-baner{
-    width:auto;
-    height: auto;
-    z-index: 1;
+.home{
+    margin:30px 0;
+    width: 100%;
 }
 .home__heading{
-    width: 50%;
+    width: 100%;
     height: 50%;
     display: flex;
     align-items: flex-start;
@@ -43,7 +25,6 @@ img-baner{
     margin-bottom: 20px;
     letter-spacing: -4px;
     line-height: 0.66;
-
 }
 .home__heading--header span{
     font-size: 140px;
@@ -256,10 +237,10 @@ img-baner{
         justify-content: center;
     }
     .aboutUsContainer--img{
-        width: 48%;
+        width: 80%;
     }
     .aboutUsContainer--img--animation{
-        width: 48%;
+        width: 80%;
     }
     .aboutUsContainer__desc{
         width: 90%;
@@ -327,7 +308,6 @@ img-baner{
 .offerContainer--button{
     margin:0 auto;
     margin-top:50px;
-
 }
 .offerContainer--button button{
     border:0;
