@@ -53,16 +53,16 @@
 
 @media (max-width: 1300px) {
     .home__heading{
-        width:40% !important;
+        width:40%;
     }
     .home__heading--header{
-        font-size: 65px !important;
+        font-size: 65px;
     }
     .home__heading--header span{
-        font-size: 85px !important;
+        font-size: 85px;
     }
     .animateTextDiv__text{
-        font-size: 25px !important;
+        font-size: 25px;
     }
 }
 
@@ -130,7 +130,11 @@
         width: 95%;
     }
 }
-
+@media (max-height: 350px) {
+    .home{
+        margin-top: 100px;
+    }
+}
 .aboutUsContainer{
     margin: 100px 0;
     width: 90%;
