@@ -79,6 +79,13 @@
     .aboutUs__info--text--p{
         width: 90%;
     }
+    .aboutUs__mainImg--img{
+        width: 310px;
+        height: 330px;
+
+    }
+
+
 }
 @media (max-width: 950px) {
     .aboutUs__info--text--p{
@@ -108,6 +115,9 @@
         width: 288px;
         height: 310px;
     }
+    .aboutUs__mainImg{
+        /margin-top: -40px;
+    }
 }
 
 @media (max-width: 590px) {
@@ -119,7 +129,17 @@
         transform: translateX(15px);
     }
     .aboutUs__mainImg{
-        margin-top: 40px;
+        margin-top: 60px;
+    }
+}
+@media (max-width: 500px) {
+    .aboutUs__mainImg{
+        margin-top: 90px;
+    }
+}
+@media (max-width: 470px) {
+    .aboutUs__mainImg{
+        margin-top: 120px;
     }
 }
 @media (max-width: 420px) {
@@ -129,7 +149,7 @@
     .aboutUs__mainImg--img{
         width: 230px;
         height: 248px;
-        margin-top:-20px;
+        margin-top:-80px;
     }
     .aboutUs__info--text--p{
         width: 98%;
@@ -152,6 +172,11 @@
     }
     .aboutUs__info{
         width: 90%;
+    }
+}
+@media (max-width: 340px) {
+    .aboutUs__mainImg{
+        margin-top: 190px;
     }
 }
 
