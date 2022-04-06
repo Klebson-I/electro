@@ -66,24 +66,10 @@
     }
 }
 
-@media (max-width: 1024px) {
-
-    .img-baner img{
-        transform: translateX(-150px);
-        transition: 0.2s;
-
-    }
-}
-
 @media (max-width: 865px) {
     .home__heading{
         width: 90%;
     }
-    .img-baner{
-        transform: translateX(-250px);
-        transition: 0.2s;
-    }
-
 }
 
 @media (max-height: 350px) {
@@ -186,31 +172,6 @@
 }
 
 /*animation*/
-    .aboutUsContainer--img--animation{
-        width:45%;
-        height: auto;
-        -webkit-animation-name: rotates;
-        -webkit-animation-duration: 4s;
-        -webkit-animation-delay: -2s;
-        animation-name: rotates;
-        animation-duration: 4s;
-        animation-delay: -2s;
-    }
-
-    -webkit-@keyframes rotates {
-        0%   {transform: rotate(0deg);}
-        25%  {transform: rotate(50deg);}
-        50%  {transform: rotate(100deg);}
-        75%  {transform: rotate(-50deg);}
-        100% {transform: rotate(0deg);}
-    }
-    @keyframes rotates {
-        0%   {transform: rotate(0deg);}
-        25%  {transform: rotate(50deg);}
-        50%  {transform: rotate(100deg);}
-        75%  {transform: rotate(-50deg);}
-        100% {transform: rotate(0deg);}
-}
 
 
 

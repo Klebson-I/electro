@@ -67,18 +67,3 @@ class AnimateText{
 }
 const animation=new AnimateText();
 animation.startAnimation();
-
-//block animation
-
-window.onscroll = function(){animationBlock()}
-
-function animationBlock(){
-
-    if(document.body.scrollTop > 250 || document.documentElement.scrollTop > 250){
-
-        document.getElementById("aboutUsContainer--img").className = "aboutUsContainer--img--animation";
-
-    }
-
-
-}
