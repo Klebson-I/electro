@@ -67,3 +67,4 @@ class AnimateText{
 }
 const animation=new AnimateText();
 animation.startAnimation();
+

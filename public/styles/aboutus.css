@@ -9,11 +9,11 @@
 
 .aboutUs{
     padding: 0;
+    margin: 30px auto 0;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 90%;
-    height: 766px;
 }
 
 .aboutUs__mainImg{
@@ -24,15 +24,17 @@
     margin-right: 35px;
 }
 
-.aboutUs__mainImg--img{
-
-}
-
 .aboutUs__info{
     width: 65%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+
+}
+
+.aboutUs__info--text{
+    margin-bottom: 10px;
+    display: flex;
+    width: 100%;
 }
 
 .aboutUs__info--header{
@@ -67,7 +69,7 @@
 
 .aboutUs__info--text--p{
     font-family: Century Gothic;
-    width: 70%;
+    width: 100%;
     font-size: 22px;
     line-height: 1.4;
     margin-bottom: 30px;
@@ -81,8 +83,7 @@
     }
     .aboutUs__mainImg--img{
         width: 310px;
-        height: 330px;
-
+        height: auto;
     }
 
 
@@ -97,7 +98,6 @@
         flex-direction: column;
     }
     .aboutUs__mainImg{
-        margin-top: 100px;
         justify-content: center;
         margin-right: 25px;
     }
@@ -113,10 +113,7 @@
 @media (max-width: 750px) {
     .aboutUs__mainImg--img{
         width: 288px;
-        height: 310px;
-    }
-    .aboutUs__mainImg{
-        /margin-top: -40px;
+        height: auto;
     }
 }
 
@@ -128,28 +125,12 @@
     .aboutUs__info--header{
         transform: translateX(15px);
     }
-    .aboutUs__mainImg{
-        margin-top: 60px;
-    }
 }
-@media (max-width: 500px) {
-    .aboutUs__mainImg{
-        margin-top: 90px;
-    }
-}
-@media (max-width: 470px) {
-    .aboutUs__mainImg{
-        margin-top: 120px;
-    }
-}
+
 @media (max-width: 420px) {
-    .aboutUs {
-        height: 866px;
-    }
     .aboutUs__mainImg--img{
         width: 230px;
-        height: 248px;
-        margin-top:-80px;
+        height: auto;
     }
     .aboutUs__info--text--p{
         width: 98%;
@@ -174,9 +155,5 @@
         width: 90%;
     }
 }
-@media (max-width: 340px) {
-    .aboutUs__mainImg{
-        margin-top: 190px;
-    }
-}
+
 
