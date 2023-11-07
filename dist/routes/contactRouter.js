@@ -8,8 +8,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 import { Router } from 'express';
-import { ClientRecord } from "../records/client.record";
-import { ValidationError } from "../utils/error";
+import { ClientRecord } from "../records/client.record.js";
+import { ValidationError } from "../utils/error.js";
 export const contactRouter = Router();
 contactRouter
     .get('/', (req, res) => {

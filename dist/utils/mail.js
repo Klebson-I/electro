@@ -7,7 +7,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-import * as nodemailer from "nodemailer";
+import nodemailer from "nodemailer";
 export const sendMail = (person, number, problem) => __awaiter(void 0, void 0, void 0, function* () {
     const message = `${person ? person : ''} \n ${number ? number : ''} \n ${problem}`;
     const transporter = nodemailer.createTransport({

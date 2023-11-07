@@ -7,7 +7,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-import { pool } from '../utils/connection';
+import { pool } from '../utils/connection.js';
 import { v4 as uuid } from 'uuid';
 export class ClientRecord {
     constructor(obj) {

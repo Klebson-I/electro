@@ -3,12 +3,15 @@
     "noImplicitAny": true,
     "preserveConstEnums": true,
     "sourceMap": true,
+    "module": "ESNext",
     "target": "ES6",
     "downlevelIteration": true,
     "lib": ["es6","dom.iterable"],
     "outDir": "dist",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "moduleResolution": "Node"
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
   }
 }

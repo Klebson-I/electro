@@ -1,4 +1,4 @@
-import * as nodemailer from "nodemailer";
+import nodemailer from "nodemailer";
 
 export const sendMail = async (person:string|undefined|null,number:string|null|undefined,problem:string) => {
     const message=`${person?person:''} \n ${number?number:''} \n ${problem}`

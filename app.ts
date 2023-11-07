@@ -1,8 +1,8 @@
-import * as express from 'express';
+import express from 'express';
 import 'express-async-errors';
 import {engine} from 'express-handlebars';
 import {Request, Response} from "express";
-import * as methodOverride from 'method-override';
+import methodOverride from 'method-override';
 import {homeRouter} from "./routes/homeRouter";
 import {aboutUsRouter} from "./routes/aboutUs";
 import {offerRouter} from "./routes/offerRouter";
