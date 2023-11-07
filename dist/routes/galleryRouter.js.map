@@ -1,0 +1,1 @@
+{"version":3,"file":"galleryRouter.js","sourceRoot":"","sources":["../../routes/galleryRouter.ts"],"names":[],"mappings":"AAAA,OAAO,EAAoB,MAAM,EAAC,MAAM,SAAS,CAAC;AAElD,MAAM,CAAC,MAAM,aAAa,GAAC,MAAM,EAAE,CAAC;AAEpC,aAAa;KACR,GAAG,CAAC,GAAG,EAAC,CAAC,GAAW,EAAC,GAAY,EAAC,EAAE;IACjC,GAAG,CAAC,MAAM,CAAC,SAAS,CAAC,CAAC;AAC1B,CAAC,CAAC,CAAA"}
